@@ -1,0 +1,1125 @@
+Traceback (most recent call last):
+  File "/home/pi/steezemobile/main.py", line 1, in <module>
+    import libioplus
+ModuleNotFoundError: No module named 'libioplus'
+ 12.341811901853381 km from home, accessory is False
+Turning starlink on
+ 12.341811901853381 km from home, accessory is False
+Turning starlink on
+ 12.341811901853381 km from home, accessory is False
+Turning starlink on
+ 12.341811901853381 km from home, accessory is False
+Turning starlink on
+ 12.341811901853381 km from home, accessory is False
+Turning starlink on
+ 12.341811901853381 km from home, accessory is False
+Turning starlink on
+ 12.341811901853381 km from home, accessory is False
+Turning starlink on
+ 12.341811901853381 km from home, accessory is False
+Turning starlink on
+ 12.341798896965464 km from home, accessory is False
+Turning starlink on
+ 12.341798896965464 km from home, accessory is False
+Turning starlink on
+ 12.341798896965464 km from home, accessory is False
+Turning starlink on
+ 12.341798896965464 km from home, accessory is True
+Turning starlink on
+ 12.341798896965464 km from home, accessory is True
+Turning starlink on
+ 12.341798896965464 km from home, accessory is True
+Turning starlink on
+ 12.341798896965464 km from home, accessory is True
+Turning starlink on
+ 12.341798896965464 km from home, accessory is False
+Turning starlink on
+ 12.341798896965464 km from home, accessory is False
+Turning starlink on
+ 12.341798896965464 km from home, accessory is False
+Turning starlink on
+ 12.341798896965464 km from home, accessory is False
+Turning starlink on
+ 12.341798896965464 km from home, accessory is False
+Turning starlink on
+ 12.341798896965464 km from home, accessory is False
+Turning starlink on
+ 12.34180049457073 km from home, accessory is False
+Turning starlink on
+ 12.341776082386744 km from home, accessory is False
+Turning starlink on
+ 12.341776082386744 km from home, accessory is False
+Turning starlink on
+ 12.341764681955603 km from home, accessory is False
+Turning starlink on
+ 12.341764681955603 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341740269769849 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341764681955603 km from home, accessory is False
+Turning starlink on
+ 12.341764681955603 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341751677046144 km from home, accessory is False
+Turning starlink on
+ 12.341764681955603 km from home, accessory is False
+Turning starlink on
+ 12.341776082386744 km from home, accessory is False
+Turning starlink on
+ 12.341776082386744 km from home, accessory is False
+Turning starlink on
+ 12.341776082386744 km from home, accessory is False
+Turning starlink on
+ 12.341776082386744 km from home, accessory is False
+Turning starlink on
+ 12.341776082386744 km from home, accessory is False
+Turning starlink on
+ 12.34178748967045 km from home, accessory is False
+Turning starlink on
+ 12.34178748967045 km from home, accessory is False
+Turning starlink on
+ 12.341798896965464 km from home, accessory is False
+Turning starlink on
+ 12.341798896965464 km from home, accessory is False
+Turning starlink on
+ 12.341823302303588 km from home, accessory is False
+Turning starlink on
+ 12.341823302303588 km from home, accessory is False
+Turning starlink on
+ 12.341847706683245 km from home, accessory is False
+Turning starlink on
+ 12.341847706683245 km from home, accessory is False
+Turning starlink on
+ 12.34185911398355 km from home, accessory is False
+Turning starlink on
+ 12.341870514454241 km from home, accessory is False
+Turning starlink on
+ 12.341870514454241 km from home, accessory is False
+Turning starlink on
+ 12.341868924735953 km from home, accessory is False
+Turning starlink on
+ 12.341868924735953 km from home, accessory is False
+Turning starlink on
+ 12.341868924735953 km from home, accessory is False
+Turning starlink on
+ 12.34186732726347 km from home, accessory is False
+Turning starlink on
+ 12.341878727787492 km from home, accessory is False
+Turning starlink on
+ 12.341865722997756 km from home, accessory is False
+Turning starlink on
+ 12.341865722997756 km from home, accessory is False
+Turning starlink on
+ 12.341865722997756 km from home, accessory is False
+Turning starlink on
+ 12.341877130387063 km from home, accessory is False
+Turning starlink on
+ 12.341877130387063 km from home, accessory is False
+Turning starlink on
+ 12.341877130387063 km from home, accessory is False
+Turning starlink on
+ 12.341877130387063 km from home, accessory is False
+Turning starlink on
+ 12.341877130387063 km from home, accessory is False
+Turning starlink on
+ 12.341875540835824 km from home, accessory is False
+Turning starlink on
+ 12.341875540835824 km from home, accessory is False
+Turning starlink on
+ 12.341875540835824 km from home, accessory is False
+Turning starlink on
+ 12.34188694141423 km from home, accessory is False
+Turning starlink on
+ 12.341873936688415 km from home, accessory is False
+Turning starlink on
+ 12.341885344132818 km from home, accessory is False
+Turning starlink on
+ 12.341885344132818 km from home, accessory is False
+Turning starlink on
+ 12.341885344132818 km from home, accessory is False
+Turning starlink on
+ 12.341885344132818 km from home, accessory is False
+Turning starlink on
+ 12.341885344132818 km from home, accessory is False
+Turning starlink on
+ 12.341885344132818 km from home, accessory is False
+Turning starlink on
+ 12.341885344132818 km from home, accessory is False
+Turning starlink on
+ 12.341885344132818 km from home, accessory is False
+Turning starlink on
+ 12.341885344132818 km from home, accessory is False
+Turning starlink on
+ 12.341896751587111 km from home, accessory is False
+Turning starlink on
+ 12.34190975628926 km from home, accessory is False
+Turning starlink on
+ 12.34190975628926 km from home, accessory is False
+Turning starlink on
+ 12.34190975628926 km from home, accessory is False
+Turning starlink on
+ 12.34190975628926 km from home, accessory is False
+Turning starlink on
+ 12.34190975628926 km from home, accessory is False
+Turning starlink on
+ 12.341921156899456 km from home, accessory is False
+Turning starlink on
+ 12.341921156899456 km from home, accessory is False
+Turning starlink on
+ 12.341921156899456 km from home, accessory is False
+Turning starlink on
+ 12.341921156899456 km from home, accessory is False
+Turning starlink on
+ 12.341932564362926 km from home, accessory is False
+Turning starlink on
+ 12.341943971836645 km from home, accessory is False
+Turning starlink on
+ 12.341943971836645 km from home, accessory is False
+Turning starlink on
+ 12.341955372476505 km from home, accessory is False
+Turning starlink on
+ 12.34195377532824 km from home, accessory is False
+Turning starlink on
+ 12.34195377532824 km from home, accessory is False
+Turning starlink on
+ 12.34195377532824 km from home, accessory is False
+Turning starlink on
+ 12.34195377532824 km from home, accessory is False
+Turning starlink on
+ 12.34195377532824 km from home, accessory is False
+Turning starlink on
+ 12.34195377532824 km from home, accessory is False
+Turning starlink on
+ 12.34194236782309 km from home, accessory is False
+Turning starlink on
+ 12.34194236782309 km from home, accessory is False
+Turning starlink on
+ 12.34194236782309 km from home, accessory is False
+Turning starlink on
+ 12.341955372476505 km from home, accessory is False
+Turning starlink on
+ 12.341966779970704 km from home, accessory is False
+Turning starlink on
+ 12.341966779970704 km from home, accessory is False
+Turning starlink on
+ 12.341978187475144 km from home, accessory is False
+Turning starlink on
+ 12.341965182846456 km from home, accessory is False
+Turning starlink on
+ 12.341965182846456 km from home, accessory is False
+Turning starlink on
+ 12.341976583528696 km from home, accessory is False
+Turning starlink on
+ 12.341976583528696 km from home, accessory is False
+Turning starlink on
+ 12.341976583528696 km from home, accessory is False
+Turning starlink on
+ 12.341976583528696 km from home, accessory is False
+Turning starlink on
+ 12.341976583528696 km from home, accessory is False
+Turning starlink on
+ 12.341976583528696 km from home, accessory is False
+Turning starlink on
+ 12.341987991065979 km from home, accessory is False
+Turning starlink on
+ 12.341987991065979 km from home, accessory is False
+Turning starlink on
+ 12.341976583528696 km from home, accessory is False
+Turning starlink on
+ 12.341976583528696 km from home, accessory is False
+Turning starlink on
+ 12.341976583528696 km from home, accessory is False
+Turning starlink on
+ 12.341965182846456 km from home, accessory is False
+Turning starlink on
+ 12.341965182846456 km from home, accessory is False
+Turning starlink on
+ 12.341965182846456 km from home, accessory is False
+Turning starlink on
+ 12.341965182846456 km from home, accessory is False
+Turning starlink on
+ 12.341978187475144 km from home, accessory is False
+Turning starlink on
+ 12.341978187475144 km from home, accessory is False
+Turning starlink on
+ 12.341978187475144 km from home, accessory is False
+Turning starlink on
+ 12.341978187475144 km from home, accessory is False
+Turning starlink on
+ 12.341978187475144 km from home, accessory is False
+Turning starlink on
+ 12.341991184318571 km from home, accessory is False
+Turning starlink on
+ 12.341991184318571 km from home, accessory is False
+Turning starlink on
+ 12.341991184318571 km from home, accessory is False
+Turning starlink on
+ 12.34200258497715 km from home, accessory is False
+Turning starlink on
+ 12.341989588146438 km from home, accessory is False
+Turning starlink on
+ 12.342000995672068 km from home, accessory is False
+Turning starlink on
+ 12.342000995672068 km from home, accessory is False
+Turning starlink on
+ 12.342000995672068 km from home, accessory is False
+Turning starlink on
+ 12.342000995672068 km from home, accessory is False
+Turning starlink on
+ 12.342000995672068 km from home, accessory is False
+Turning starlink on
+ 12.341989588146438 km from home, accessory is False
+Turning starlink on
+ 12.341989588146438 km from home, accessory is False
+Turning starlink on
+ 12.34200258497715 km from home, accessory is False
+Turning starlink on
+ 12.341991184318571 km from home, accessory is False
+Turning starlink on
+ 12.341991184318571 km from home, accessory is False
+Turning starlink on
+ 12.34200258497715 km from home, accessory is False
+Turning starlink on
+ 12.342015589622797 km from home, accessory is False
+Turning starlink on
+ 12.342015589622797 km from home, accessory is False
+Turning starlink on
+ 12.342015589622797 km from home, accessory is False
+Turning starlink on
+ 12.342015589622797 km from home, accessory is False
+Turning starlink on
+ 12.342015589622797 km from home, accessory is False
+Turning starlink on
+ 12.342015589622797 km from home, accessory is False
+Turning starlink on
+ 12.342026997124412 km from home, accessory is False
+Turning starlink on
+ 12.342026997124412 km from home, accessory is False
+Turning starlink on
+ 12.342026997124412 km from home, accessory is False
+Turning starlink on
+ 12.342026997124412 km from home, accessory is False
+Turning starlink on
+ 12.342026997124412 km from home, accessory is False
+Turning starlink on
+ 12.342026997124412 km from home, accessory is False
+Turning starlink on
+ 12.342026997124412 km from home, accessory is False
+Turning starlink on
+ 12.34204000177288 km from home, accessory is False
+Turning starlink on
+ 12.34204000177288 km from home, accessory is False
+Turning starlink on
+ 12.34204000177288 km from home, accessory is False
+Turning starlink on
+ 12.342052998632907 km from home, accessory is False
+Turning starlink on
+ 12.342052998632907 km from home, accessory is False
+Turning starlink on
+ 12.342052998632907 km from home, accessory is False
+Turning starlink on
+ 12.342052998632907 km from home, accessory is False
+Turning starlink on
+ 12.342052998632907 km from home, accessory is False
+Turning starlink on
+ 12.342041591154603 km from home, accessory is False
+Turning starlink on
+ 12.342041591154603 km from home, accessory is False
+Turning starlink on
+ 12.342052998632907 km from home, accessory is False
+Turning starlink on
+ 12.342052998632907 km from home, accessory is False
+Turning starlink on
+ 12.342052998632907 km from home, accessory is False
+Turning starlink on
+ 12.342051409272024 km from home, accessory is False
+Turning starlink on
+ 12.342051409272024 km from home, accessory is False
+Turning starlink on
+ 12.342062809939431 km from home, accessory is False
+Turning starlink on
+ 12.342062809939431 km from home, accessory is False
+Turning starlink on
+ 12.342062809939431 km from home, accessory is False
+Turning starlink on
+ 12.342062809939431 km from home, accessory is False
+Turning starlink on
+ 12.342062809939431 km from home, accessory is False
+Turning starlink on
+ 12.34207580677544 km from home, accessory is False
+Turning starlink on
+ 12.34207580677544 km from home, accessory is False
+Turning starlink on
+ 12.34207580677544 km from home, accessory is False
+Turning starlink on
+ 12.34207580677544 km from home, accessory is False
+Turning starlink on
+ 12.34207580677544 km from home, accessory is False
+Turning starlink on
+ 12.34207580677544 km from home, accessory is False
+Turning starlink on
+ 12.34207580677544 km from home, accessory is False
+Turning starlink on
+ 12.34208881142815 km from home, accessory is False
+Turning starlink on
+ 12.34210021892305 km from home, accessory is False
+Turning starlink on
+ 12.34210021892305 km from home, accessory is False
+Turning starlink on
+ 12.34210021892305 km from home, accessory is False
+Turning starlink on
+ 12.342124631070664 km from home, accessory is False
+Turning starlink on
+ 12.342124631070664 km from home, accessory is False
+Turning starlink on
+ 12.342124631070664 km from home, accessory is False
+Turning starlink on
+ 12.342136031732073 km from home, accessory is False
+Turning starlink on
+ 12.342136031732073 km from home, accessory is False
+Turning starlink on
+ 12.34214902857479 km from home, accessory is False
+Turning starlink on
+ 12.34213762792469 km from home, accessory is False
+Turning starlink on
+ 12.34213762792469 km from home, accessory is False
+Turning starlink on
+ 12.342150632595404 km from home, accessory is False
+Turning starlink on
+ 12.342139225124518 km from home, accessory is False
+Turning starlink on
+ 12.342139225124518 km from home, accessory is False
+Turning starlink on
+ 12.342150632595404 km from home, accessory is False
+Turning starlink on
+ 12.342150632595404 km from home, accessory is False
+Turning starlink on
+ 12.342162033232443 km from home, accessory is False
+Turning starlink on
+ 12.342162033232443 km from home, accessory is False
+Turning starlink on
+ 12.342173440722755 km from home, accessory is False
+Turning starlink on
+ 12.342173440722755 km from home, accessory is False
+Turning starlink on
+ 12.342197852871784 km from home, accessory is False
+Turning starlink on
+ 12.342197852871784 km from home, accessory is False
+Turning starlink on
+ 12.342197852871784 km from home, accessory is False
+Turning starlink on
+ 12.34221084973322 km from home, accessory is False
+Turning starlink on
+ 12.342222250377677 km from home, accessory is False
+Turning starlink on
+ 12.342222250377677 km from home, accessory is False
+Turning starlink on
+ 12.342222250377677 km from home, accessory is False
+Turning starlink on
+ 12.342235255040974 km from home, accessory is False
+Turning starlink on
+ 12.342235255040974 km from home, accessory is False
+Turning starlink on
+ 12.342235255040974 km from home, accessory is False
+Turning starlink on
+ 12.342223854407468 km from home, accessory is False
+Turning starlink on
+ 12.342225451643676 km from home, accessory is False
+Turning starlink on
+ 12.342225451643676 km from home, accessory is False
+Turning starlink on
+ 12.342225451643676 km from home, accessory is False
+Turning starlink on
+ 12.342238448558088 km from home, accessory is False
+Turning starlink on
+ 12.342238448558088 km from home, accessory is False
+Turning starlink on
+ 12.342238448558088 km from home, accessory is False
+Turning starlink on
+ 12.342238448558088 km from home, accessory is False
+Turning starlink on
+ 12.342238448558088 km from home, accessory is False
+Turning starlink on
+ 12.342225451643676 km from home, accessory is False
+Turning starlink on
+ 12.342225451643676 km from home, accessory is False
+Turning starlink on
+ 12.34221404420104 km from home, accessory is False
+Turning starlink on
+ 12.34221404420104 km from home, accessory is False
+Turning starlink on
+ 12.342227041127106 km from home, accessory is False
+Turning starlink on
+ 12.342227041127106 km from home, accessory is False
+Turning starlink on
+ 12.342227041127106 km from home, accessory is False
+Turning starlink on
+ 12.34224004586881 km from home, accessory is False
+Turning starlink on
+ 12.34224004586881 km from home, accessory is False
+Turning starlink on
+ 12.34224004586881 km from home, accessory is False
+Turning starlink on
+ 12.342253050623935 km from home, accessory is False
+Turning starlink on
+ 12.342253050623935 km from home, accessory is False
+Turning starlink on
+ 12.342253050623935 km from home, accessory is False
+Turning starlink on
+ 12.342253050623935 km from home, accessory is False
+Turning starlink on
+ 12.342253050623935 km from home, accessory is False
+Turning starlink on
+ 12.342253050623935 km from home, accessory is False
+Turning starlink on
+ 12.342253050623935 km from home, accessory is False
+Turning starlink on
+ 12.342253050623935 km from home, accessory is False
+Turning starlink on
+ 12.342253050623935 km from home, accessory is False
+Turning starlink on
+ 12.342253050623935 km from home, accessory is False
+Turning starlink on
+ 12.34226604759203 km from home, accessory is False
+Turning starlink on
+ 12.342253050623935 km from home, accessory is False
+Turning starlink on
+ 12.34226604759203 km from home, accessory is False
+Turning starlink on
+ 12.342277454986284 km from home, accessory is False
+Turning starlink on
+ 12.342277454986284 km from home, accessory is False
+Turning starlink on
+ 12.342277454986284 km from home, accessory is False
+Turning starlink on
+ 12.342277454986284 km from home, accessory is False
+Turning starlink on
+ 12.342277454986284 km from home, accessory is False
+Turning starlink on
+ 12.342277454986284 km from home, accessory is False
+Turning starlink on
+ 12.342288862392543 km from home, accessory is False
+Turning starlink on
+ 12.342288862392543 km from home, accessory is False
+Turning starlink on
+ 12.342288862392543 km from home, accessory is False
+Turning starlink on
+ 12.342300262964242 km from home, accessory is False
+Turning starlink on
+ 12.342300262964242 km from home, accessory is False
+Turning starlink on
+ 12.342300262964242 km from home, accessory is False
+Turning starlink on
+ 12.342313267713363 km from home, accessory is False
+Turning starlink on
+ 12.342313267713363 km from home, accessory is False
+Turning starlink on
+ 12.342313267713363 km from home, accessory is False
+Turning starlink on
+ 12.342324675126688 km from home, accessory is False
+Turning starlink on
+ 12.342311670390277 km from home, accessory is False
+Turning starlink on
+ 12.342323077827269 km from home, accessory is False
+Turning starlink on
+ 12.342323077827269 km from home, accessory is False
+Turning starlink on
+ 12.342323077827269 km from home, accessory is False
+Turning starlink on
+ 12.342323077827269 km from home, accessory is False
+Turning starlink on
+ 12.342311670390277 km from home, accessory is False
+Turning starlink on
+ 12.342311670390277 km from home, accessory is False
+Turning starlink on
+ 12.342311670390277 km from home, accessory is False
+Turning starlink on
+ 12.342311670390277 km from home, accessory is False
+Turning starlink on
+ 12.342313267713363 km from home, accessory is False
+Turning starlink on
+ 12.342313267713363 km from home, accessory is False
+Turning starlink on
+ 12.342300262964242 km from home, accessory is False
+Turning starlink on
+ 12.342288862392543 km from home, accessory is False
+Turning starlink on
+ 12.342288862392543 km from home, accessory is False
+Turning starlink on
+ 12.342277454986284 km from home, accessory is False
+Turning starlink on
+ 12.34226604759203 km from home, accessory is False
+Turning starlink on
+ 12.34227905237647 km from home, accessory is False
+Turning starlink on
+ 12.342267651845386 km from home, accessory is False
+Turning starlink on
+ 12.34225624448292 km from home, accessory is False
+Turning starlink on
+ 12.34225624448292 km from home, accessory is False
+Turning starlink on
+ 12.34225624448292 km from home, accessory is False
+Turning starlink on
+ 12.342257841964932 km from home, accessory is False
+Turning starlink on
+ 12.342257841964932 km from home, accessory is False
+Turning starlink on
+ 12.342257841964932 km from home, accessory is False
+Turning starlink on
+ 12.342257841964932 km from home, accessory is False
+Turning starlink on
+ 12.342257841964932 km from home, accessory is False
+Turning starlink on
+ 12.342282246337874 km from home, accessory is False
+Turning starlink on
+ 12.342282246337874 km from home, accessory is False
+Turning starlink on
+ 12.342282246337874 km from home, accessory is False
+Turning starlink on
+ 12.342293653677737 km from home, accessory is False
+Turning starlink on
+ 12.342293653677737 km from home, accessory is False
+Turning starlink on
+ 12.342293653677737 km from home, accessory is False
+Turning starlink on
+ 12.342293653677737 km from home, accessory is False
+Turning starlink on
+ 12.342293653677737 km from home, accessory is False
+Turning starlink on
+ 12.342305054183392 km from home, accessory is False
+Turning starlink on
+ 12.342305054183392 km from home, accessory is False
+Turning starlink on
+ 12.342305054183392 km from home, accessory is False
+Turning starlink on
+ 12.342292057173621 km from home, accessory is False
+Turning starlink on
+ 12.342292057173621 km from home, accessory is False
+Turning starlink on
+ 12.342292057173621 km from home, accessory is False
+Turning starlink on
+ 12.342292057173621 km from home, accessory is False
+Turning starlink on
+ 12.342280656655252 km from home, accessory is False
+Turning starlink on
+ 12.342280656655252 km from home, accessory is False
+Turning starlink on
+ 12.342269249304442 km from home, accessory is False
+Turning starlink on
+ 12.342269249304442 km from home, accessory is False
+Turning starlink on
+ 12.342269249304442 km from home, accessory is False
+Turning starlink on
+ 12.34225624448292 km from home, accessory is False
+Turning starlink on
+ 12.34225624448292 km from home, accessory is False
+Turning starlink on
+ 12.34225624448292 km from home, accessory is False
+Turning starlink on
+ 12.34225624448292 km from home, accessory is False
+Turning starlink on
+ 12.342244837130696 km from home, accessory is False
+Turning starlink on
+ 12.342244837130696 km from home, accessory is False
+Turning starlink on
+ 12.342244837130696 km from home, accessory is False
+Turning starlink on
+ 12.342233436632103 km from home, accessory is False
+Turning starlink on
+ 12.342233436632103 km from home, accessory is False
+Turning starlink on
+ 12.342233436632103 km from home, accessory is False
+Turning starlink on
+ 12.342233436632103 km from home, accessory is False
+Turning starlink on
+ 12.342246441477643 km from home, accessory is False
+Turning starlink on
+ 12.342246441477643 km from home, accessory is False
+Turning starlink on
+ 12.34223503415826 km from home, accessory is False
+Turning starlink on
+ 12.34223503415826 km from home, accessory is False
+Turning starlink on
+ 12.34223503415826 km from home, accessory is False
+Turning starlink on
+ 12.34223503415826 km from home, accessory is False
+Turning starlink on
+ 12.34224803122736 km from home, accessory is False
+Turning starlink on
+ 12.34224803122736 km from home, accessory is False
+Turning starlink on
+ 12.34224803122736 km from home, accessory is False
+Turning starlink on
+ 12.342236623930232 km from home, accessory is False
+Turning starlink on
+ 12.342249628827684 km from home, accessory is False
+Turning starlink on
+ 12.342249628827684 km from home, accessory is False
+Turning starlink on
+ 12.342249628827684 km from home, accessory is False
+Turning starlink on
+ 12.342249628827684 km from home, accessory is False
+Turning starlink on
+ 12.342249628827684 km from home, accessory is False
+Turning starlink on
+ 12.342249628827684 km from home, accessory is False
+Turning starlink on
+ 12.342236623930232 km from home, accessory is False
+Turning starlink on
+ 12.342236623930232 km from home, accessory is False
+Turning starlink on
+ 12.34224803122736 km from home, accessory is False
+Turning starlink on
+ 12.34224803122736 km from home, accessory is False
+Turning starlink on
+ 12.342236623930232 km from home, accessory is False
+Turning starlink on
+ 12.342223626849119 km from home, accessory is False
+Turning starlink on
+ 12.342223626849119 km from home, accessory is False
+Turning starlink on
+ 12.342223626849119 km from home, accessory is False
+Turning starlink on
+ 12.342210621979218 km from home, accessory is False
+Turning starlink on
+ 12.342210621979218 km from home, accessory is False
+Turning starlink on
+ 12.342210621979218 km from home, accessory is False
+Turning starlink on
+ 12.342199221511349 km from home, accessory is False
+Turning starlink on
+ 12.342199221511349 km from home, accessory is False
+Turning starlink on
+ 12.342187814210687 km from home, accessory is False
+Turning starlink on
+ 12.342187814210687 km from home, accessory is False
+Turning starlink on
+ 12.342176406920975 km from home, accessory is False
+Turning starlink on
+ 12.342176406920975 km from home, accessory is False
+Turning starlink on
+ 12.342189411826553 km from home, accessory is False
+Turning starlink on
+ 12.34217801140283 km from home, accessory is False
+Turning starlink on
+ 12.34217801140283 km from home, accessory is False
+Turning starlink on
+ 12.34216660414455 km from home, accessory is False
+Turning starlink on
+ 12.34216660414455 km from home, accessory is False
+Turning starlink on
+ 12.34216660414455 km from home, accessory is False
+Turning starlink on
+ 12.342155196896506 km from home, accessory is False
+Turning starlink on
+ 12.342155196896506 km from home, accessory is False
+Turning starlink on
+ 12.342143796502809 km from home, accessory is False
+Turning starlink on
+ 12.342143796502809 km from home, accessory is False
+Turning starlink on
+ 12.342143796502809 km from home, accessory is False
+Turning starlink on
+ 12.342143796502809 km from home, accessory is False
+Turning starlink on
+ 12.342130791548849 km from home, accessory is False
+Turning starlink on
+ 12.342130791548849 km from home, accessory is False
+Turning starlink on
+ 12.342130791548849 km from home, accessory is False
+Turning starlink on
+ 12.342130791548849 km from home, accessory is False
+Turning starlink on
+ 12.342142191955613 km from home, accessory is False
+Turning starlink on
+ 12.342142191955613 km from home, accessory is False
+Turning starlink on
+ 12.342142191955613 km from home, accessory is False
+Turning starlink on
+ 12.342153599214956 km from home, accessory is False
+Turning starlink on
+ 12.342153599214956 km from home, accessory is False
+Turning starlink on
+ 12.342153599214956 km from home, accessory is False
+Turning starlink on
+ 12.342153599214956 km from home, accessory is False
+Turning starlink on
+ 12.342153599214956 km from home, accessory is False
+Turning starlink on
+ 12.34217801140283 km from home, accessory is False
+Turning starlink on
+ 12.34216660414455 km from home, accessory is False
+Turning starlink on
+ 12.34216660414455 km from home, accessory is False
+Turning starlink on
+ 12.34216660414455 km from home, accessory is False
+Turning starlink on
+ 12.34216660414455 km from home, accessory is False
+Turning starlink on
+ 12.342155196896506 km from home, accessory is False
+Turning starlink on
+ 12.342155196896506 km from home, accessory is False
+Turning starlink on
+ 12.342143796502809 km from home, accessory is False
+Turning starlink on
+ 12.342143796502809 km from home, accessory is False
+Turning starlink on
+ 12.342143796502809 km from home, accessory is False
+Turning starlink on
+ 12.342143796502809 km from home, accessory is False
+Turning starlink on
+ 12.342143796502809 km from home, accessory is False
+Turning starlink on
+ 12.342143796502809 km from home, accessory is False
+Turning starlink on
+ 12.342143796502809 km from home, accessory is False
+Turning starlink on
+ 12.342130791548849 km from home, accessory is False
+Turning starlink on
+ 12.342130791548849 km from home, accessory is False
+Turning starlink on
+ 12.342130791548849 km from home, accessory is False
+Turning starlink on
+ 12.342106379358855 km from home, accessory is False
+Turning starlink on
+ 12.342093382224064 km from home, accessory is False
+Turning starlink on
+ 12.342093382224064 km from home, accessory is False
+Turning starlink on
+ 12.342093382224064 km from home, accessory is False
+Turning starlink on
+ 12.342093382224064 km from home, accessory is False
+Turning starlink on
+ 12.342081974971084 km from home, accessory is False
+Turning starlink on
+ 12.342081974971084 km from home, accessory is False
+Turning starlink on
+ 12.342070574572789 km from home, accessory is False
+Turning starlink on
+ 12.342070574572789 km from home, accessory is False
+Turning starlink on
+ 12.342059167341349 km from home, accessory is False
+Turning starlink on
+ 12.342072164513574 km from home, accessory is False
+Turning starlink on
+ 12.342072164513574 km from home, accessory is False
+Turning starlink on
+ 12.342072164513574 km from home, accessory is False
+Turning starlink on
+ 12.342072164513574 km from home, accessory is False
+Turning starlink on
+ 12.342059167341349 km from home, accessory is False
+Turning starlink on
+ 12.342059167341349 km from home, accessory is False
+Turning starlink on
+ 12.342059167341349 km from home, accessory is False
+Turning starlink on
+ 12.34204776012015 km from home, accessory is False
+Turning starlink on
+ 12.34204776012015 km from home, accessory is False
+Turning starlink on
+ 12.34204776012015 km from home, accessory is False
+Turning starlink on
+ 12.34203635975188 km from home, accessory is False
+Turning starlink on
+ 12.342024952551167 km from home, accessory is False
+Turning starlink on
+ 12.342026542580246 km from home, accessory is False
+Turning starlink on
+ 12.342015142255061 km from home, accessory is False
+Turning starlink on
+ 12.342005333023028 km from home, accessory is False
+Turning starlink on
+ 12.342006937837926 km from home, accessory is False
+Turning starlink on
+ 12.341984123643455 km from home, accessory is False
+Turning starlink on
+ 12.34197272340409 km from home, accessory is False
+Turning starlink on
+ 12.341985720749722 km from home, accessory is False
+Turning starlink on
+ 12.34197431368922 km from home, accessory is False
+Turning starlink on
+ 12.341975911825658 km from home, accessory is False
+Turning starlink on
+ 12.34197751685246 km from home, accessory is False
+Turning starlink on
+ 12.34197751685246 km from home, accessory is False
+Turning starlink on
+ 12.34197910728203 km from home, accessory is False
+Turning starlink on
+ 12.341967700299938 km from home, accessory is False
+Turning starlink on
+ 12.341980705563977 km from home, accessory is False
+Turning starlink on
+ 12.341993710841088 km from home, accessory is False
+Turning starlink on
+ 12.342006708329754 km from home, accessory is False
+Turning starlink on
+ 12.342006708329754 km from home, accessory is False
+Turning starlink on
+ 12.342008313553627 km from home, accessory is False
+Turning starlink on
+ 12.342019713634771 km from home, accessory is False
+Turning starlink on
+ 12.342008313553627 km from home, accessory is False
+Turning starlink on
+ 12.342008313553627 km from home, accessory is False
+Turning starlink on
+ 12.342008313553627 km from home, accessory is False
+Turning starlink on
+ 12.342019713634771 km from home, accessory is False
+Turning starlink on
+ 12.342019713634771 km from home, accessory is False
+Turning starlink on
+ 12.342019713634771 km from home, accessory is False
+Turning starlink on
+ 12.342019713634771 km from home, accessory is False
+Turning starlink on
+ 12.342006708329754 km from home, accessory is False
+Turning starlink on
+ 12.342018115275833 km from home, accessory is False
+Turning starlink on
+ 12.342018115275833 km from home, accessory is False
+Turning starlink on
+ 12.342005117798468 km from home, accessory is False
+Turning starlink on
+ 12.342005117798468 km from home, accessory is False
+Turning starlink on
+ 12.342005117798468 km from home, accessory is False
+Turning starlink on
+ 12.342005117798468 km from home, accessory is False
+Turning starlink on
+ 12.342005117798468 km from home, accessory is False
+Turning starlink on
+ 12.342005117798468 km from home, accessory is False
+Turning starlink on
+ 12.341992112533367 km from home, accessory is False
+Turning starlink on
+ 12.341992112533367 km from home, accessory is False
+Turning starlink on
+ 12.341980705563977 km from home, accessory is False
+Turning starlink on
+ 12.341980705563977 km from home, accessory is False
+Turning starlink on
+ 12.341969305446462 km from home, accessory is False
+Turning starlink on
+ 12.341957898496142 km from home, accessory is False
+Turning starlink on
+ 12.341946491557483 km from home, accessory is False
+Turning starlink on
+ 12.341946491557483 km from home, accessory is False
+Turning starlink on
+ 12.341935091471393 km from home, accessory is False
+Turning starlink on
+ 12.341935091471393 km from home, accessory is False
+Turning starlink on
+ 12.34192208616038 km from home, accessory is False
+Turning starlink on
+ 12.341910679228427 km from home, accessory is False
+Turning starlink on
+ 12.341910679228427 km from home, accessory is False
+Turning starlink on
+ 12.341899272307428 km from home, accessory is False
+Turning starlink on
+ 12.341899272307428 km from home, accessory is False
+Turning starlink on
+ 12.341887872240763 km from home, accessory is False
+Turning starlink on
+ 12.341887872240763 km from home, accessory is False
+Turning starlink on
+ 12.341876465340953 km from home, accessory is False
+Turning starlink on
+ 12.341876465340953 km from home, accessory is False
+Turning starlink on
+ 12.341876465340953 km from home, accessory is False
+Turning starlink on
+ 12.341865058451734 km from home, accessory is False
+Turning starlink on
+ 12.341865058451734 km from home, accessory is False
+Turning starlink on
+ 12.341853658416149 km from home, accessory is False
+Turning starlink on
+ 12.341853658416149 km from home, accessory is False
+Turning starlink on
+ 12.341853658416149 km from home, accessory is False
+Turning starlink on
+ 12.341842251547419 km from home, accessory is False
+Turning starlink on
+ 12.341829253966926 km from home, accessory is False
+Turning starlink on
+ 12.341829253966926 km from home, accessory is False
+Turning starlink on
+ 12.3418048417176 km from home, accessory is False
+Turning starlink on
+ 12.3418048417176 km from home, accessory is False
+Turning starlink on
+ 12.341793441689786 km from home, accessory is False
+Turning starlink on
+ 12.341793441689786 km from home, accessory is False
+Turning starlink on
+ 12.341769029439407 km from home, accessory is False
+Turning starlink on
+ 12.341757622575262 km from home, accessory is False
+Turning starlink on
+ 12.341746222564755 km from home, accessory is False
+Turning starlink on
+ 12.341746222564755 km from home, accessory is False
+Turning starlink on
+ 12.341734815723568 km from home, accessory is False
+Turning starlink on
+ 12.341723408889097 km from home, accessory is False
+Turning starlink on
+ 12.341712008910017 km from home, accessory is False
+Turning starlink on
+ 12.341712008910017 km from home, accessory is False
+Turning starlink on
+ 12.341700602098852 km from home, accessory is False
+Turning starlink on
+ 12.341700602098852 km from home, accessory is False
+Turning starlink on
+ 12.341687604453378 km from home, accessory is False
+Turning starlink on
+ 12.341687604453378 km from home, accessory is False
+Turning starlink on
+ 12.341676197640444 km from home, accessory is False
+Turning starlink on
+ 12.341663192194167 km from home, accessory is False
+Turning starlink on
+ 12.341663192194167 km from home, accessory is False
+Turning starlink on
+ 12.341663192194167 km from home, accessory is False
+Turning starlink on
+ 12.34163878677799 km from home, accessory is False
+Turning starlink on
+ 12.34163878677799 km from home, accessory is False
+Turning starlink on
+ 12.341627379961526 km from home, accessory is False
+Turning starlink on
+ 12.341627379961526 km from home, accessory is False
+Turning starlink on
+ 12.341615973154953 km from home, accessory is False
+Turning starlink on
+ 12.341604573200598 km from home, accessory is False
+Turning starlink on
+ 12.341604573200598 km from home, accessory is False
+Turning starlink on
+ 12.341593166415919 km from home, accessory is False
+Turning starlink on
+ 12.34158175964078 km from home, accessory is False
+Turning starlink on
+ 12.341570359717858 km from home, accessory is False
+Turning starlink on
+ 12.341558952961785 km from home, accessory is False
+Turning starlink on
+ 12.341558952961785 km from home, accessory is False
+Turning starlink on
+ 12.34156055175795 km from home, accessory is False
+Turning starlink on
+ 12.341549151878818 km from home, accessory is False
+Turning starlink on
+ 12.341537745166544 km from home, accessory is False
+Turning starlink on
+ 12.341537745166544 km from home, accessory is False
+Turning starlink on
+ 12.341539344054532 km from home, accessory is False
+Turning starlink on
+ 12.341539344054532 km from home, accessory is False
+Turning starlink on
+ 12.34152794421778 km from home, accessory is False
+Turning starlink on
+ 12.341516537548596 km from home, accessory is False
+Turning starlink on
+ 12.341516537548596 km from home, accessory is False
+Turning starlink on
+ 12.341505130891058 km from home, accessory is False
+Turning starlink on
+ 12.341505130891058 km from home, accessory is False
+Turning starlink on
+ 12.341492125266072 km from home, accessory is False
+Turning starlink on
+ 12.341492125266072 km from home, accessory is False
+Turning starlink on
+ 12.341454722017946 km from home, accessory is False
+Turning starlink on
+ 12.341454722017946 km from home, accessory is False
+Turning starlink on
+ 12.341430309735426 km from home, accessory is False
+Turning starlink on
+ 12.341418903059527 km from home, accessory is False
+Turning starlink on
+ 12.341418903059527 km from home, accessory is False
+Turning starlink on
+ 12.341405897454319 km from home, accessory is False
+Turning starlink on
+ 12.341405897454319 km from home, accessory is False
+Turning starlink on
+ 12.341392899664392 km from home, accessory is False
+Turning starlink on
+ 12.341392899664392 km from home, accessory is False
+Turning starlink on
+ 12.341368494229851 km from home, accessory is False
+Turning starlink on
+ 12.341355488653253 km from home, accessory is False
+Turning starlink on
+ 12.341355488653253 km from home, accessory is False
+Turning starlink on
+ 12.341344081950512 km from home, accessory is False
+Turning starlink on
+ 12.341344081950512 km from home, accessory is False
+Turning starlink on
+ 12.341332675258368 km from home, accessory is False
+Turning starlink on
+ 12.34134568085757 km from home, accessory is False
+Turning starlink on
+ 12.341334281030358 km from home, accessory is False
+Turning starlink on
+ 12.341322874370702 km from home, accessory is False
+Turning starlink on
+ 12.341322874370702 km from home, accessory is False
+Turning starlink on
+ 12.34131146771988 km from home, accessory is False
+Turning starlink on
+ 12.34131146771988 km from home, accessory is False
+Turning starlink on
+ 12.34130006792481 km from home, accessory is False
+Turning starlink on
+ 12.34130006792481 km from home, accessory is False
+Turning starlink on
+ 12.341313073585106 km from home, accessory is False
+Turning starlink on
+ 12.341313073585106 km from home, accessory is False
+Turning starlink on
+Terminated

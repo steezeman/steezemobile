@@ -69,9 +69,9 @@
 #define USBD_PRODUCT_STRING_FS     "STM32 Human interface"
 #define USBD_CONFIGURATION_STRING_FS     "HID Config"
 #define USBD_INTERFACE_STRING_FS     "HID Interface"
-#define DEVICE_SERIAL0     (*(uint32_t *) 0x11223344)
-#define DEVICE_SERIAL1     (*(uint32_t *) 0x55667788)
-#define DEVICE_SERIAL2     (*(uint32_t *) 0x12345678)
+#define DEVICE_SERIAL0     (1111)
+#define DEVICE_SERIAL1     (1111)
+#define DEVICE_SERIAL2     (1111)
 
 #define USB_SIZ_BOS_DESC            0x0C
 

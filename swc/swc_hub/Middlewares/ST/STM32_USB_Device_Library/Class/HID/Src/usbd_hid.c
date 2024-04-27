@@ -158,7 +158,7 @@ __ALIGN_BEGIN static uint8_t USBD_HID_CfgDesc[USB_HID_CONFIG_DESC_SIZ] __ALIGN_E
   0x01,                                               /* bNumEndpoints */
   0x03,                                               /* bInterfaceClass: HID */
   0x01,                                               /* bInterfaceSubClass : 1=BOOT, 0=no boot */
-  0x02,                                               /* nInterfaceProtocol : 0=none, 1=keyboard, 2=mouse */
+  0x0C,                                               /* nInterfaceProtocol : 0=none, 1=keyboard, 2=mouse */
   0,                                                  /* iInterface: Index of string descriptor */
   /******************** Descriptor of Joystick Mouse HID ********************/
   /* 18 */
@@ -169,7 +169,7 @@ __ALIGN_BEGIN static uint8_t USBD_HID_CfgDesc[USB_HID_CONFIG_DESC_SIZ] __ALIGN_E
   0x00,                                               /* bCountryCode: Hardware target country */
   0x01,                                               /* bNumDescriptors: Number of HID class descriptors to follow */
   0x22,                                               /* bDescriptorType */
-  HID_MOUSE_REPORT_DESC_SIZE,                         /* wItemLength: Total length of Report descriptor */
+  HID_TACO_REPORT_DESC_SIZE,                         /* wItemLength: Total length of Report descriptor */
   0x00,
   /******************** Descriptor of Mouse endpoint ********************/
   /* 27 */
@@ -196,7 +196,7 @@ __ALIGN_BEGIN static uint8_t USBD_HID_Desc[USB_HID_DESC_SIZ] __ALIGN_END =
   0x00,                                               /* bCountryCode: Hardware target country */
   0x01,                                               /* bNumDescriptors: Number of HID class descriptors to follow */
   0x22,                                               /* bDescriptorType */
-  HID_MOUSE_REPORT_DESC_SIZE,                         /* wItemLength: Total length of Report descriptor */
+  HID_TACO_REPORT_DESC_SIZE,                         /* wItemLength: Total length of Report descriptor */
   0x00,
 };
 
@@ -217,47 +217,76 @@ __ALIGN_BEGIN static uint8_t USBD_HID_DeviceQualifierDesc[USB_LEN_DEV_QUALIFIER_
 };
 #endif /* USE_USBD_COMPOSITE  */
 
-__ALIGN_BEGIN static uint8_t HID_MOUSE_ReportDesc[HID_MOUSE_REPORT_DESC_SIZE] __ALIGN_END =
+//__ALIGN_BEGIN static uint8_t HID_MOUSE_ReportDesc[HID_MOUSE_REPORT_DESC_SIZE] __ALIGN_END =
+//{
+//  0x05, 0x01,        /* Usage Page (Generic Desktop Ctrls)     */
+//  0x09, 0x02,        /* Usage (Mouse)                          */
+//  0xA1, 0x01,        /* Collection (Application)               */
+//  0x09, 0x01,        /*   Usage (Pointer)                      */
+//  0xA1, 0x00,        /*   Collection (Physical)                */
+//  0x05, 0x09,        /*     Usage Page (Button)                */
+//  0x19, 0x01,        /*     Usage Minimum (0x01)               */
+//  0x29, 0x03,        /*     Usage Maximum (0x03)               */
+//  0x15, 0x00,        /*     Logical Minimum (0)                */
+//  0x25, 0x01,        /*     Logical Maximum (1)                */
+//  0x95, 0x03,        /*     Report Count (3)                   */
+//  0x75, 0x01,        /*     Report Size (1)                    */
+//  0x81, 0x02,        /*     Input (Data,Var,Abs)               */
+//  0x95, 0x01,        /*     Report Count (1)                   */
+//  0x75, 0x05,        /*     Report Size (5)                    */
+//  0x81, 0x01,        /*     Input (Const,Array,Abs)            */
+//  0x05, 0x01,        /*     Usage Page (Generic Desktop Ctrls) */
+//  0x09, 0x30,        /*     Usage (X)                          */
+//  0x09, 0x31,        /*     Usage (Y)                          */
+//  0x09, 0x38,        /*     Usage (Wheel)                      */
+//  0x15, 0x81,        /*     Logical Minimum (-127)             */
+//  0x25, 0x7F,        /*     Logical Maximum (127)              */
+//  0x75, 0x08,        /*     Report Size (8)                    */
+//  0x95, 0x03,        /*     Report Count (3)                   */
+//  0x81, 0x06,        /*     Input (Data,Var,Rel)               */
+//  0xC0,              /*   End Collection                       */
+//  0x09, 0x3C,        /*   Usage (Motion Wakeup)                */
+//  0x05, 0xFF,        /*   Usage Page (Reserved 0xFF)           */
+//  0x09, 0x01,        /*   Usage (0x01)                         */
+//  0x15, 0x00,        /*   Logical Minimum (0)                  */
+//  0x25, 0x01,        /*   Logical Maximum (1)                  */
+//  0x75, 0x01,        /*   Report Size (1)                      */
+//  0x95, 0x02,        /*   Report Count (2)                     */
+//  0xB1, 0x22,        /*   Feature (Data,Var,Abs,NoWrp)         */
+//  0x75, 0x06,        /*   Report Size (6)                      */
+//  0x95, 0x01,        /*   Report Count (1)                     */
+//  0xB1, 0x01,        /*   Feature (Const,Array,Abs,NoWrp)      */
+//  0xC0               /* End Collection                         */
+//};
+
+// https://eleccelerator.com/usbdescreqparser/
+__ALIGN_BEGIN static uint8_t HID_TACO_ReportDesc[HID_TACO_REPORT_DESC_SIZE] __ALIGN_END =
 {
-  0x05, 0x01,        /* Usage Page (Generic Desktop Ctrls)     */
-  0x09, 0x02,        /* Usage (Mouse)                          */
-  0xA1, 0x01,        /* Collection (Application)               */
-  0x09, 0x01,        /*   Usage (Pointer)                      */
-  0xA1, 0x00,        /*   Collection (Physical)                */
-  0x05, 0x09,        /*     Usage Page (Button)                */
-  0x19, 0x01,        /*     Usage Minimum (0x01)               */
-  0x29, 0x03,        /*     Usage Maximum (0x03)               */
-  0x15, 0x00,        /*     Logical Minimum (0)                */
-  0x25, 0x01,        /*     Logical Maximum (1)                */
-  0x95, 0x03,        /*     Report Count (3)                   */
-  0x75, 0x01,        /*     Report Size (1)                    */
-  0x81, 0x02,        /*     Input (Data,Var,Abs)               */
-  0x95, 0x01,        /*     Report Count (1)                   */
-  0x75, 0x05,        /*     Report Size (5)                    */
-  0x81, 0x01,        /*     Input (Const,Array,Abs)            */
-  0x05, 0x01,        /*     Usage Page (Generic Desktop Ctrls) */
-  0x09, 0x30,        /*     Usage (X)                          */
-  0x09, 0x31,        /*     Usage (Y)                          */
-  0x09, 0x38,        /*     Usage (Wheel)                      */
-  0x15, 0x81,        /*     Logical Minimum (-127)             */
-  0x25, 0x7F,        /*     Logical Maximum (127)              */
-  0x75, 0x08,        /*     Report Size (8)                    */
-  0x95, 0x03,        /*     Report Count (3)                   */
-  0x81, 0x06,        /*     Input (Data,Var,Rel)               */
-  0xC0,              /*   End Collection                       */
-  0x09, 0x3C,        /*   Usage (Motion Wakeup)                */
-  0x05, 0xFF,        /*   Usage Page (Reserved 0xFF)           */
-  0x09, 0x01,        /*   Usage (0x01)                         */
-  0x15, 0x00,        /*   Logical Minimum (0)                  */
-  0x25, 0x01,        /*   Logical Maximum (1)                  */
-  0x75, 0x01,        /*   Report Size (1)                      */
-  0x95, 0x02,        /*   Report Count (2)                     */
-  0xB1, 0x22,        /*   Feature (Data,Var,Abs,NoWrp)         */
-  0x75, 0x06,        /*   Report Size (6)                      */
-  0x95, 0x01,        /*   Report Count (1)                     */
-  0xB1, 0x01,        /*   Feature (Const,Array,Abs,NoWrp)      */
-  0xC0               /* End Collection                         */
+		0x05, 0x0C,        // Usage Page (Consumer)
+		0x09, 0x01,        // Usage (Consumer Control)
+		0xA1, 0x00,        // Collection (Physical)
+		0xA1, 0x01,        //   Collection (Application)
+		0x05, 0x0C,        //     Usage Page (Consumer)
+		0x85, 0x01,        //     Report ID (1)
+		0x15, 0x00,        //     Logical Minimum (0)
+		0x25, 0x01,        //     Logical Maximum (1)
+		0x75, 0x01,        //     Report Size (1)
+		0x95, 0x07,        //     Report Count (7)
+		0x09, 0xCF,        //     Usage (Siri)
+		0x09, 0xB5,        //     Usage (Scan Previous Track)
+		0x09, 0xB6,        //     Usage (Scan Previous Track)
+		0x09, 0xE9,        //     Usage (Volume Increment)
+		0x09, 0xEA,        //     Usage (Volume Decrement)
+		0x09, 0xCA,        //     Usage (Mute)
+		0x09, 0x30,        //     Usage (Power)
+		0x81, 0x02,        //     Input (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
+		0xC0,              //   End Collection
+		0xC0,              // End Collection
+
+		// 38 bytes
+
 };
+
 
 static uint8_t HIDInEpAdd = HID_EPIN_ADDR;
 
@@ -412,8 +441,8 @@ static uint8_t USBD_HID_Setup(USBD_HandleTypeDef *pdev, USBD_SetupReqTypedef *re
         case USB_REQ_GET_DESCRIPTOR:
           if ((req->wValue >> 8) == HID_REPORT_DESC)
           {
-            len = MIN(HID_MOUSE_REPORT_DESC_SIZE, req->wLength);
-            pbuf = HID_MOUSE_ReportDesc;
+            len = MIN(HID_TACO_REPORT_DESC_SIZE, req->wLength);
+            pbuf = HID_TACO_ReportDesc;
           }
           else if ((req->wValue >> 8) == HID_DESCRIPTOR_TYPE)
           {

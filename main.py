@@ -25,6 +25,14 @@ def EnableHighPowerCharge(iso, non):
     else:
         libioplus.setOdPwm(0, 1, 0)
 
+    if iso or non:
+        libioplus.setOdPwm(0,2,10000)
+        libioplus.setOdPwm(0,3,10000)
+    else:
+        libioplus.setOdPwm(0,2,0)
+        libioplus.setOdPwm(0,3,0)
+
+
 def GetAccessoryState():
     return libioplus.getOptoCh(0, 5)
 
@@ -108,7 +116,7 @@ if __name__ == '__main__':
                 EnableStarlink(False)
 
             if accessory:
-                EnableHighPowerCharge(True, True)
+                EnableHighPowerCharge(True, False)
             else:
                 EnableHighPowerCharge(False, False)
 

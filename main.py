@@ -7,15 +7,16 @@ import home
 class Steezemobile:
     def __init__(self):
         self.base_charger_relay_channel = 1
-        self.iso2_charger_relay_channel = 2
-        self.non2_charger_relay_channel = 3
-        self.compressor_relay_channel = 4
+        self.iso2_charger_relay_channel = 3
+        self.non2_charger_relay_channel = 4
+        self.compressor_relay_channel = 2
         self.inverter_relay_channel = 7
         self.battery_heater_relay_channel = 8
 
         self.lighting_od_channel = 1
-        self.ac_compressor_od_channel = 2
-        self.charger_cooling_od_channel = 3
+        self.ac_compressor_od_channel = 1
+        self.charger_cooling_od_channel_1 = 2
+        self.charger_cooling_od_channel_2 = 3
 
         self.accessory_opto_channel = 5
 
@@ -71,9 +72,11 @@ class Steezemobile:
         #  FAN1  FAN2
         # The fans are on a single control circuit, so if any chargers are on, the fans should be on.
         if base or iso or non:
-            libioplus.setOdPwm(0, self.charger_cooling_od_channel, 10000)
+            libioplus.setOdPwm(0, self.charger_cooling_od_channel_1, 10000)
+            libioplus.setOdPwm(0, self.charger_cooling_od_channel_2, 10000)
         else:
-            libioplus.setOdPwm(0, self.charger_cooling_od_channel, 0)
+            libioplus.setOdPwm(0, self.charger_cooling_od_channel_1, 0)
+            libioplus.setOdPwm(0, self.charger_cooling_od_channel_2, 0)
 
         # If we are pulling 90A or 120A from the truck, command the engine to idle higher
         # We implement this on the Tacoma as if the A/C compressor was always on

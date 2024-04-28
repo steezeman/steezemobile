@@ -3,127 +3,91 @@ import socket
 from pynmeagps import NMEAReader
 import geopy.distance as distance
 import home
-from threading import Thread
-import time
+
+class Steezemobile:
+    def __init__(self):
+        self.base_charger_relay_channel = 1
+        self.iso2_charger_relay_channel = 2
+        self.non2_charger_relay_channel = 3
+        self.compressor_relay_channel = 4
+        self.inverter_relay_channel = 7
+        self.battery_heater_relay_channel = 8
+
+        self.lighting_od_channel = 1
+        self.ac_compressor_od_channel = 2
+        self.charger_cooling_od_channel = 3
+
+        self.accessory_opto_channel = 5
+
+    def Run(self):
+        # Connect to the PepLink router and get position updates
+        stream = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        stream.connect(("192.168.50.1", 60660))
+        nmr = NMEAReader(stream)
+
+        # This loop will not return unless there is a fault in the router
+        for (raw_data, parsed_data) in nmr:
+            if parsed_data.msgID == "RMC":
+                # Home address is git ignored in home.py. Drop a tuple in that file with home address.
+                # Currently, geofence is a simple circle with 1km radius around home.
+                coords_1 = home.home
+                coords_2 = (parsed_data.lat, parsed_data.lon)
+
+                distance_from_home = distance.distance(coords_1, coords_2).km
+                accessory = self.GetAccessoryState()
+
+                if distance_from_home > 1.0 or accessory:
+                    self.EnableInverter(True)
+                else:
+                    self.EnableInverter(False)
+
+                if accessory:
+                    self.EnableCharge(True, True, True)
+                    self.EnableCompressor(True)
+                else:
+                    self.EnableCharge(False, False, False)
+                    self.EnableCompressor(False)
 
 
-def EnableStarlink(on):
-    libioplus.setRelayCh(0, 7, on)
+    def EnableInverter(self, on):
+        libioplus.setRelayCh(0, self.inverter_relay_channel, on)
 
+    def EnableCompressor(self, on):
+        libioplus.setRelayCh(0, self.compressor_relay_channel, on)
 
-def EnableCompressor(on):
-    libioplus.setRelayCh(0, 1, on)
-    libioplus.setRelayCh(0, 2, on)
+    def EnableCharge(self, base, iso, non):
+        # Chargers ISO1 and NON1 are paired, drawing 60A from the alternator. The Tacoma can handle this load under all
+        # conditions
+        # Chargers ISO2 and NON2 can be toggled on and off using this function, pulling another 120A from the alternator
+        # We will want ISO2 and/or NON2 to be enabled only when the truck can support them
+        libioplus.setRelayCh(0, self.base_charger_relay_channel, base)
+        libioplus.setRelayCh(0, self.iso2_charger_relay_channel, iso)
+        libioplus.setRelayCh(0, self.non2_charger_relay_channel, non)
 
-def EnableHighPowerCharge(iso, non):
-    # Disable the chargers
-    libioplus.setRelayCh(0, 3, iso)
-    libioplus.setRelayCh(0, 4, non)
-
-    if iso or non:
-        libioplus.setOdPwm(0, 1, 10000)
-    else:
-        libioplus.setOdPwm(0, 1, 0)
-
-    if iso or non:
-        libioplus.setOdPwm(0,2,10000)
-        libioplus.setOdPwm(0,3,10000)
-    else:
-        libioplus.setOdPwm(0,2,0)
-        libioplus.setOdPwm(0,3,0)
-
-
-def GetAccessoryState():
-    return libioplus.getOptoCh(0, 5)
-
-def GetSwcState():
-    testkey = ["",""]
-    confidentkey = ["",""]
-    oldkey = ["",""]
-
-    while(1):
-        swc = (libioplus.getAdcV(0, 1), libioplus.getAdcV(0, 2))
-
-        oldkey[0] = testkey[0]
-
-        if swc[0] < 0.03:
-            testkey[0] = "MODE"
-        elif swc[0] < 0.1:
-            testkey[0] = "HANG UP"
-        elif swc[0] < 0.3:
-            testkey[0] = "ANSWER"
-        elif swc[0] < 0.7:
-            testkey[0] = "SIRI"
+        # Enable the cooling fans if any chargers are on. The chargers are mounted like this:
+        #  ISO1  ISO2
+        #  NON2  NON1
+        #   ^^    ^^
+        #  FAN1  FAN2
+        # The fans are on a single control circuit, so if any chargers are on, the fans should be on.
+        if base or iso or non:
+            libioplus.setOdPwm(0, self.charger_cooling_od_channel, 10000)
         else:
-            testkey[0] = ""
-            confidentkey[0] = ""
+            libioplus.setOdPwm(0, self.charger_cooling_od_channel, 0)
 
-        oldkey[1] = testkey[1]
-
-        if swc[1] < 0.03:
-            testkey[1] = "UP"
-        elif swc[1] < 0.1:
-            testkey[1] = "DOWN"
-        elif swc[1] < 0.3:
-            testkey[1] = "VOL+"
-        elif swc[1] < 0.7:
-            testkey[1] = "VOL-"
+        # If we are pulling 90A or 120A from the truck, command the engine to idle higher
+        # We implement this on the Tacoma as if the A/C compressor was always on
+        number_of_chargers = base * 2 + iso + non
+        if number_of_chargers > 2:
+            libioplus.setOdPwm(0, self.ac_compressor_od_channel, 10000)
         else:
-            testkey[1] = ""
-            confidentkey[1] = ""
+            libioplus.setOdPwm(0, self.ac_compressor_od_channel, 0)
 
-        if oldkey[0] == testkey[0] and confidentkey[0] == "" and testkey[0] != "":
-            confidentkey[0] = testkey[0]
-            print(confidentkey[0])
+    def GetAccessoryState(self):
+        return libioplus.getOptoCh(0, self.accessory_opto_channel)
 
-        if oldkey[1] == testkey[1] and confidentkey[1] == "" and testkey[1] != "":
-            confidentkey[1] = testkey[1]
-            print(confidentkey[1])
+if __name__ == "__main__":
+    steezemobile = Steezemobile()
+    steezemobile.Run()
 
-        if confidentkey[0] != "" or confidentkey[0] != "":
-            # Do some HID stuff
-            pass
-
-        time.sleep(0.01)
-
-
-
-if __name__ == '__main__':
-    thread = Thread(target=GetSwcState)
-    thread.start()
-
-    stream = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    stream.connect(("192.168.50.1", 60660))
-    nmr = NMEAReader(stream)
-
-    # Set the engine idle high (10000) or low (0)
-    libioplus.setOdPwm(0, 1, 0)
-
-    EnableCompressor(True)
-
-    for (raw_data, parsed_data) in nmr:
-        if parsed_data.msgID == "RMC":
-            coords_1 = home.home
-            coords_2 = (parsed_data.lat, parsed_data.lon)
-
-            distance_from_home = distance.distance(coords_1, coords_2).km
-            accessory = GetAccessoryState()
-
-            print(f" {distance_from_home} km from home, accessory is {accessory}")
-            if distance_from_home > 1.0 or accessory:
-                EnableStarlink(True)
-            else:
-                EnableStarlink(False)
-
-            if accessory:
-                EnableHighPowerCharge(True, False)
-            else:
-                EnableHighPowerCharge(False, False)
-
-
-
-            # if alternator_current > 50:
-            #     EnableHighPowerCharge(True, True)
-
-
-    thread.join()
+    print("Steezemobile exit")

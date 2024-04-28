@@ -1,6 +1,6 @@
 home.py
 venv/
 .idea/
-*/Debug/*
-*/Release/*
+**/Debug/**
+**/Release/**
 .DS_Store

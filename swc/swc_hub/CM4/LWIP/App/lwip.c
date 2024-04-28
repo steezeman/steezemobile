@@ -26,6 +26,7 @@
 #include "lwip/sio.h"
 #endif /* MDK ARM Compiler */
 #include "ethernetif.h"
+#include "tcp.h"
 
 /* USER CODE BEGIN 0 */
 
@@ -51,7 +52,7 @@ ip4_addr_t netmask;
 ip4_addr_t gw;
 
 /* USER CODE BEGIN 2 */
-
+err_t tcp_accept_callback(void *arg, struct tcp_pcb *newpcb, err_t err);
 /* USER CODE END 2 */
 
 /**
@@ -83,7 +84,10 @@ void MX_LWIP_Init(void)
   dhcp_start(&gnetif);
 
 /* USER CODE BEGIN 3 */
-
+//  struct tcp_pcb* pcb = tcp_new();
+//    tcp_bind(pcb, IP4_ADDR_ANY, 2424);
+//    tcp_accept(pcb, tcp_accept_callback);
+//    tcp_listen(pcb);
 /* USER CODE END 3 */
 }
 
@@ -114,6 +118,53 @@ static void Ethernet_Link_Periodic_Handle(struct netif *netif)
 /* USER CODE END 4_4 */
 }
 
+typedef struct __packed {
+	uint8_t accessory_state;
+	uint8_t ignition_state;
+	uint32_t engine_rpm;
+} steezemobile_radio_output_t;
+
+
+typedef struct __packed {
+	uint8_t enable_idle_boost;
+} steezemobile_radio_input_t;
+
+err_t tcp_recv_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err)
+{
+	steezemobile_radio_input_t * input = (steezemobile_radio_input_t*)p->payload;
+
+	if(input->enable_idle_boost)
+	{
+
+	}
+	else
+	{
+
+	}
+
+	steezemobile_radio_output_t output;
+
+	output.accessory_state = 0;
+	output.ignition_state = 0;
+	output.engine_rpm = 0;
+
+	tcp_recved(tpcb, p->len);
+	tcp_write(tpcb, &output, sizeof(steezemobile_radio_output_t), TCP_WRITE_FLAG_COPY);
+
+
+	return ERR_OK;
+}
+
+err_t tcp_accept_callback(void *arg, struct tcp_pcb *newpcb, err_t err)
+{
+	tcp_recv(newpcb, tcp_recv_callback);
+
+	return ERR_OK;
+}
+
+
+
+
 /**
  * ----------------------------------------------------------------------
  * Function given to help user to continue LwIP Initialization
@@ -139,6 +190,8 @@ void MX_LWIP_Process(void)
   Ethernet_Link_Periodic_Handle(&gnetif);
 
 /* USER CODE BEGIN 4_3 */
+
+
 /* USER CODE END 4_3 */
 }
 

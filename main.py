@@ -37,6 +37,8 @@ class Steezemobile:
                 distance_from_home = distance.distance(coords_1, coords_2).km
                 accessory = self.GetAccessoryState()
 
+                print(f"{distance_from_home} {accessory}")
+
                 if distance_from_home > 1.0 or accessory:
                     self.EnableInverter(True)
                 else:

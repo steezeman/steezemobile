@@ -3,6 +3,7 @@ import socket
 from pynmeagps import NMEAReader
 import geopy.distance as distance
 import home
+import serial
 
 class Steezemobile:
     def __init__(self):
@@ -13,18 +14,28 @@ class Steezemobile:
         self.inverter_relay_channel = 7
         self.battery_heater_relay_channel = 8
 
-        self.lighting_od_channel = 1
+        self.lighting_od_channel = 4
         self.ac_compressor_od_channel = 1
         self.charger_cooling_od_channel_1 = 2
         self.charger_cooling_od_channel_2 = 3
 
         self.accessory_opto_channel = 5
 
+        self.soc = 0.0
+        self.high_power_enabled = False
+        self.base_power_enabled = False
+        self.battery_amps = 0.0
+
     def Run(self):
         # Connect to the PepLink router and get position updates
         stream = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         stream.connect(("192.168.50.1", 60660))
         nmr = NMEAReader(stream)
+
+        # Set light brightness
+        libioplus.setOdPwm(0, 4, 500)
+
+        ser = serial.Serial("/dev/ttyUSB0", baudrate=19200)
 
         # This loop will not return unless there is a fault in the router
         for (raw_data, parsed_data) in nmr:
@@ -44,9 +55,39 @@ class Steezemobile:
                 else:
                     self.EnableInverter(False)
 
+                while ser.inWaiting() > 0:
+                    string_to_read = ser.readline()
+                    if string_to_read[0:2] == b'I\t':
+                        newstr = string_to_read
+                        newstr = newstr.replace(b'\r\n', b'')
+                        newstr = newstr.replace(b'I\t', b'')
+                        self.battery_amps = int(newstr) / 1000.0
+                        print(f'{self.battery_amps} A')
+
+                    if string_to_read[0:4] == b'SOC\t':
+                        newstr = string_to_read
+                        newstr = newstr.replace(b'\r\n', b'')
+                        newstr = newstr.replace(b'SOC\t', b'')
+                        self.soc = int(newstr) / 10.0
+                        print(f'{self.soc}% SOC')
+
+                if self.soc > 80.0 and self.high_power_enabled:
+                    print("Switch to low power alternator charging")
+                    self.high_power_enabled = False
+                if self.soc < 75.0 and not self.high_power_enabled:
+                    print("Switch to high power alternator charging")
+                    self.high_power_enabled = True
+
+                if self.soc > 85.0 and self.base_power_enabled:
+                    print("Switch off alternator charging")
+                    self.base_power_enabled = False
+                if self.soc < 80.0 and not self.base_power_enabled:
+                    print("Switch off alternator charging")
+                    self.base_power_enabled = True
+
                 if accessory:
-                    self.EnableCharge(True, True, True)
-                    self.EnableCompressor(True)
+                    self.EnableCharge(self.base_power_enabled, self.high_power_enabled, self.high_power_enabled)
+                    self.EnableCompressor(not self.high_power_enabled)
                 else:
                     self.EnableCharge(False, False, False)
                     self.EnableCompressor(False)
